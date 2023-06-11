@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    text-align: center;
+    width: 95%;
+    overflow: hidden;
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 0 0 16px rgba(0,0,0.2);
+    position: relative;
+}
+.container .score-container{
+    background-color: #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 90%;
+    margin: 10px auto;
+}
+.container .score-container p{
+    font-size: 40px;
+    padding: 5px;
+}
+.computer-choice-container, .user-choice-container{
+    display: flex;
+}
+.computer-choice-container p, .user-choice-container p{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+}
+.options button{
+    margin: 10px;
+}
+button{
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    border:none;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0,0,0.2);
+    border-radius: 8px;
+}
+#rock{
+    background-color: #008cba;
+}
+#paper{
+    background-color:  #138065; 
+}
+#scissors{
+    background-color: #c3324d; 
+}
+#reset-btn{
+    background-color: #094067;
+    margin-top: 10px;
+}
+#computer-choice{
+    color: #700808;
+}
+#user-choice{
+    color: #e99e18;
+}
+
+/* ============================= Modal Box ========================================= */
+#modalBox{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+  }
+  /* .offer-text h2{
+    font-size: 20px;
+  }
+  .offer-text small{
+    color: red;
+  }
+  .offer-text p{
+    text-align: justify;
+    line-height: 20px;
+  }
+  .offer-text form{
+    margin-top: 30px;
+    display: flex;
+    background: #efefef;
+    border-radius: 4px;  
+  }
+  .offer-text form input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding:12px 10px;
+  }
+  .offer-text form button{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background: #ff2b4e;
+    color: #fff;
+    padding: 0 15px;
+  } */
+  #closeIcon{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    background: #fff;
+    color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+  }
+
+@media screen and (max-width: 480px){
+    .options button{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 480px){
+    .container .score-container p{
+        text-align: center;
+        font-size: 25px;
+        padding: 5px;
+    }
+    .options{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .computer-choice-container p, .user-choice-container p{
+        font-size: 18px;
+    }
+}

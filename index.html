@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ROCK, PAPER AND SCISSORS GAME </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="score-container">
+            <p class="score"> You <span id="user-score"> 0 </span> - <span id="computer-score"> 0 </span> Computer </p>
+            <p class="counter">Number of Clicks Remaining: <span id="counter"> 10</span></p>
+
+        </div>
+        <div class="computer-choice-container">
+            <p> Computer's Choice: <span id="computer-choice"> I am Waiting </span></p>
+
+        </div>
+
+        <div class="score-board">
+            <h2 id="score"> ...</h2>
+        </div>
+
+        <div class="user-choice-container">
+            <p> Your Choice: <span id="user-choice"> Make a Choice </span></p>
+
+        </div>
+
+        <div class="options">
+            <button id="rock"> Rock</button>
+            <button id="paper"> Paper</button>
+            <button id="scissors"> Scissors</button>
+        </div>
+
+        <div class="reset">
+            <button id="reset-btn"> Reset</button>
+        </div>
+
+        <div id="modalBox">
+            <h1> Player User</h1>
+                <h2 id ="player-score">  </h2>
+
+                <h3> Vs </h3>
+                <h2 id ="com-score">  </h2>
+            <h1> Player Computer</h1>
+            <img class="fa-solid fa-xmark" id="closeIcon"  src="close.png"></i>
+            <div class="winner" id="winner">
+
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
